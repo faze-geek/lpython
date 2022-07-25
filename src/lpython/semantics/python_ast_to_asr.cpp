@@ -3394,7 +3394,7 @@ public:
                 ASR::expr_t *end = nullptr;
                 if (c->n_keywords > 0) {
                     std::string arg_name;
-                    for (size_t i = 0; i < c->n_keywords; i++) {
+                    for (size_t i = 0; i < c->n_keywords ; i++) {
                         arg_name = c->m_keywords[i].m_arg;
                         if (arg_name == "sep") {
                             visit_expr(*c->m_keywords[i].m_value);
